@@ -1,271 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baudienstleistungen Deluxe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodCheck | Start</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="hero">
-    <div class="gradient"></div>
-    <div class="hero__content">
-      <div class="badge">Premium Bau &amp; Sanierung</div>
-      <h1>Wir bauen Räume, in denen Zukunft wächst.</h1>
-      <p>Von der ersten Idee bis zur schlüsselfertigen Übergabe liefern wir meisterhafte Baudienstleistungen, die Design, Präzision und Nachhaltigkeit vereinen.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#kontakt">Projekt anfragen</a>
-        <a class="btn btn--ghost" href="#leistungen">Unsere Leistungen</a>
-      </div>
-      <div class="metrics">
-        <div>
-          <strong>320+</strong>
-          <span>realisierte Projekte</span>
-        </div>
-        <div>
-          <strong>18</strong>
-          <span>Jahre Bauerfahrung</span>
-        </div>
-        <div>
-          <strong>98%</strong>
-          <span>Kundenzufriedenheit</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero__visual">
-      <div class="card-stack">
-        <div class="card">
-          <p class="label">Architektur &amp; Planung</p>
-          <h3>Digitale 3D-Modelle, präzise Kostenkontrolle, klare Timeline.</h3>
-        </div>
-        <div class="card">
-          <p class="label">Bauleitung</p>
-          <h3>Daily Reports, transparente Kommunikation und Qualitätskontrollen.</h3>
-        </div>
-        <div class="card">
-          <p class="label">Nachhaltigkeit</p>
-          <h3>Materialwahl mit Lifecycle-Analyse und energieeffiziente Konzepte.</h3>
-        </div>
-      </div>
-    </div>
+<body class="page">
+  <header class="topbar">
+    <div class="brand">BloodCheck</div>
+    <nav class="nav">
+      <a href="index.html" class="active">Start</a>
+      <a href="analyse.html">Analyse</a>
+      <a href="info.html">Info</a>
+      <a href="quellen.html">Quellen</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">DSGVO</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="leistungen" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Was wir liefern</p>
-        <h2>Baudienstleistungen, die Maßstäbe setzen.</h2>
-        <p class="lead">Wir orchestrieren alle Gewerke – von der Konzeptphase bis zum letzten Finish – damit Ihr Projekt reibungslos, transparent und beeindruckend umgesetzt wird.</p>
+  <main class="hero hero--home">
+    <div class="hero__content">
+      <p class="eyebrow">Luxuriöse Blutwert-Insights</p>
+      <h1>BloodCheck</h1>
+      <p class="lead">Elegante Analyseoberfläche, präzise Auswertungen und sofortige PDF-Dokumentation – entwickelt für anspruchsvolle Praxiserlebnisse.</p>
+      <div class="actions">
+        <a class="btn btn--gold" href="analyse.html">Analyse starten</a>
+        <a class="btn btn--outline" href="info.html">Werte verstehen</a>
       </div>
-      <div class="grid services">
-        <article class="tile">
-          <div class="icon">🏗️</div>
-          <h3>Schlüsselfertiger Hochbau</h3>
-          <p>Komplette Umsetzung inklusive Statik, Rohbau, Ausbau, TGA-Koordination und finale Abnahme.</p>
-          <ul>
-            <li>Proaktive Termin- &amp; Budgetsteuerung</li>
-            <li>Eigenes Qualitätslabor für Materialprüfungen</li>
-            <li>Digitale Baustellendokumentation</li>
-          </ul>
-        </article>
-        <article class="tile">
-          <div class="icon">🧱</div>
-          <h3>Sanierung &amp; Revitalisierung</h3>
-          <p>Substanzanalyse, Schadstoffsanierung und hochwertiger Innenausbau mit denkmalgerechter Sorgfalt.</p>
-          <ul>
-            <li>Bestandsscan &amp; BIM-gestützte Planung</li>
-            <li>Staubarme Bauabläufe für laufenden Betrieb</li>
-            <li>Energieeffizienz-Upgrade nach GEG</li>
-          </ul>
-        </article>
-        <article class="tile">
-          <div class="icon">🌱</div>
-          <h3>Green Building</h3>
-          <p>CO₂-optimierte Materialwahl, PV-Integration, Regenwassermanagement und intelligente Gebäudetechnik.</p>
-          <ul>
-            <li>DGNB/LEED/VfW-konforme Konzepte</li>
-            <li>Lifecycle-Analysen &amp; Monitoring</li>
-            <li>Fördermittelberatung und -beantragung</li>
-          </ul>
-        </article>
-        <article class="tile">
-          <div class="icon">🛰️</div>
-          <h3>Smart Construction</h3>
-          <p>IOT-Sensorik für Baustellen, Drohnenaufmaß, AR-Begehungen und Predictive Maintenance.</p>
-          <ul>
-            <li>Live-Dashboards für Fortschritt &amp; Qualität</li>
-            <li>Digitale Mängelverfolgung</li>
-            <li>Automatisierte Reporting-Kanäle</li>
-          </ul>
-        </article>
+      <div class="pill-row">
+        <span class="pill">Dunkles Luxus-Design</span>
+        <span class="pill">Chart.js Kreisdiagramm</span>
+        <span class="pill">PDF-Export via jsPDF</span>
       </div>
-    </section>
-
-    <section class="section highlight">
-      <div class="highlight__content">
-        <p class="eyebrow">Signature-Projekte</p>
-        <h2>Architektur, die Geschichten erzählt.</h2>
-        <p class="lead">Ob ikonischer Firmen-Campus, Boutique-Hotel oder energiepositive Wohnanlage – unsere Teams liefern messbare Ergebnisse und eindrucksvolle Räume.</p>
-        <div class="cases">
-          <div class="case">
-            <div class="pill">Innovation Campus</div>
-            <h3>Hybridbau aus Holz &amp; Sichtbeton</h3>
-            <p>17.000 m² Büroflächen mit begrünten Atrien, Low-Carbon Beton, PV-Fassade und Smart Lighting.</p>
-          </div>
-          <div class="case">
-            <div class="pill">Stadtvilla Revival</div>
-            <h3>Denkmalgerechte Sanierung</h3>
-            <p>Freilegung historischer Stuckdecken, akustikoptimierter Saal, Wärmepumpen &amp; Speicherlösungen.</p>
-          </div>
-          <div class="case">
-            <div class="pill">Nordstern Quartier</div>
-            <h3>Wohnensemble der Effizienzklasse A+</h3>
-            <p>Plusenergie-Häuser mit Erdwärme, Fassadenbegrünung, Car-Sharing-Hub und Regenwassernutzung.</p>
-          </div>
-        </div>
-      </div>
-      <div class="highlight__visual">
-        <div class="statboard">
-          <div class="stat">
-            <span>Ø 12%</span>
-            <p>Energieeinsparung gegenüber Planwert durch Value Engineering.</p>
-          </div>
-          <div class="stat">
-            <span>24/7</span>
-            <p>Projekttracking via Kundenportal &amp; wöchentliche Executive-Reports.</p>
-          </div>
-          <div class="stat">
-            <span>100% </span>
-            <p>Transparente Kostenentwicklung mit Freigabe-Workflows.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section process">
-      <div class="section__header">
-        <p class="eyebrow">So arbeiten wir</p>
-        <h2>Präzise Prozesse, klare Verantwortlichkeiten.</h2>
-        <p class="lead">Unsere Teams kombinieren Handwerkskunst mit datengetriebenen Tools. Jeder Schritt ist dokumentiert, auditiert und für Sie nachvollziehbar.</p>
-      </div>
-      <div class="timeline">
-        <div class="step">
-          <div class="step__number">01</div>
+    </div>
+    <div class="hero__panel">
+      <div class="glass">
+        <p class="muted">Verlässliche Orientierung</p>
+        <h3>Intuitive Bewertung</h3>
+        <p class="muted">Grenzenlos konfigurierbar – Referenzbereiche, Farben und neue Blutbilder lassen sich direkt im Code ergänzen.</p>
+        <div class="stat-grid">
           <div>
-            <h3>Analyse &amp; Vision</h3>
-            <p>Workshops, Machbarkeitsstudien, Standortanalysen und CO₂-Budgetierung.</p>
+            <p class="muted">Profile</p>
+            <strong>Geschlechtsspezifisch</strong>
           </div>
-        </div>
-        <div class="step">
-          <div class="step__number">02</div>
           <div>
-            <h3>Entwurf &amp; Kalkulation</h3>
-            <p>BIM-basierte Modelle, Kostenbenchmarking, Variantenvergleiche und Förderszenarien.</p>
+            <p class="muted">PDF</p>
+            <strong>Download mit Zeitstempel</strong>
           </div>
-        </div>
-        <div class="step">
-          <div class="step__number">03</div>
           <div>
-            <h3>Realisierung</h3>
-            <p>Gewerkekoordination, Qualitätsprüfungen, Arbeitssicherheit nach ISO 45001 und Live-Reporting.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__number">04</div>
-          <div>
-            <h3>Übergabe &amp; Betrieb</h3>
-            <p>Abnahmen, Nutzer-Schulungen, Wartungspakete, digitale Zwillinge &amp; Optimierungszyklen.</p>
+            <p class="muted">Charts</p>
+            <strong>Dynamische Kreise</strong>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section testimonials">
-      <div class="section__header">
-        <p class="eyebrow">Stimmen unserer Auftraggeber</p>
-        <h2>Ergebnisorientiert, partnerschaftlich, verlässlich.</h2>
-      </div>
-      <div class="carousel">
-        <figure class="quote">
-          <blockquote>„Die Transparenz in Budget und Baufortschritt ist einzigartig. Unser Campus wurde vier Wochen früher fertig – bei höherer Qualität, als wir erwartet hatten.“</blockquote>
-          <figcaption>— Miriam Keller, CFO TechLabs Europe</figcaption>
-        </figure>
-        <figure class="quote">
-          <blockquote>„Selten ein Team erlebt, das Nachhaltigkeit und Design so selbstverständlich zusammendenkt. Die CO₂-Einsparungen wurden lückenlos dokumentiert.“</blockquote>
-          <figcaption>— Dr. Jonas Rau, Geschäftsführer UrbanGreen</figcaption>
-        </figure>
-        <figure class="quote">
-          <blockquote>„Baustellenbetrieb bei laufendem Hotelgeschäft? Kein Problem. Staubarme Prozesse, Nachtarbeiten und perfektes Finish – unsere Gäste haben nichts bemerkt.“</blockquote>
-          <figcaption>— Sarah Nguyen, Owner Aurelia Boutique Hotels</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section cta" id="kontakt">
-      <div class="cta__content">
-        <p class="eyebrow">Bereit für den nächsten Meilenstein?</p>
-        <h2>Lassen Sie uns Ihr Projekt visionär denken und makellos umsetzen.</h2>
-        <p class="lead">Schreiben Sie uns eine Nachricht oder vereinbaren Sie direkt ein Kick-off. Wir liefern einen klaren Fahrplan, transparente Kosten und ein erstklassiges Team.</p>
-        <form class="form">
-          <div class="form__grid">
-            <label>
-              <span>Ihr Name</span>
-              <input type="text" placeholder="Vor- und Nachname" required />
-            </label>
-            <label>
-              <span>Unternehmen</span>
-              <input type="text" placeholder="Firmenname" />
-            </label>
-            <label>
-              <span>E-Mail</span>
-              <input type="email" placeholder="beispiel@firma.de" required />
-            </label>
-            <label>
-              <span>Telefon</span>
-              <input type="tel" placeholder="+49" />
-            </label>
-          </div>
-          <label>
-            <span>Projektidee</span>
-            <textarea rows="4" placeholder="Beschreiben Sie kurz Ihr Vorhaben"></textarea>
-          </label>
-          <div class="form__actions">
-            <button type="submit" class="btn btn--primary">Beratung anfordern</button>
-            <div class="assurance">Antwort innerhalb von 24h. Vertrauliche Behandlung Ihrer Daten.</div>
-          </div>
-        </form>
-      </div>
-      <div class="cta__panel">
-        <div class="panel__item">
-          <p class="label">Showroom</p>
-          <p>Hansaring 21 · 50670 Köln<br />Mo–Fr: 9:00 – 18:00 Uhr</p>
-        </div>
-        <div class="panel__item">
-          <p class="label">Direktkontakt</p>
-          <p>+49 221 123 45 67<br />projects@baudeluxe.de</p>
-        </div>
-        <div class="panel__item">
-          <p class="label">Dokumentation</p>
-          <p>Live-Dashboards, wöchentliche Reports und digitale Zwillinge für jedes Projekt.</p>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
-
-  <footer class="footer">
-    <div>
-      <div class="badge">Baudienstleistungen Deluxe</div>
-      <p>Architektur, Bauleitung und hochwertige Ausführung für ambitionierte Projekte.</p>
-    </div>
-    <div class="footer__links">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#kontakt">Kontakt</a>
-      <a href="#">Datenschutz</a>
-    </div>
-    <p class="footer__note">Made mit Präzision, Verantwortung und Begeisterung.</p>
-  </footer>
 </body>
 </html>
