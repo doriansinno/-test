@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodCheck | Analyse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body class="page">
+  <div class="background-anim" aria-hidden="true">
+    <div class="bg-layer bg-droplets"></div>
+    <div class="bg-layer bg-ekg">
+      <svg class="ekg-line" viewBox="0 0 1200 220" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="ekgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="var(--ekg)" stop-opacity="0.8" />
+            <stop offset="50%" stop-color="var(--gold)" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="var(--ekg)" stop-opacity="0.8" />
+          </linearGradient>
+        </defs>
+        <path d="M0 120 L80 120 L120 70 L160 170 L220 120 L320 120 L360 80 L400 160 L440 120 L540 120 L560 60 L600 180 L660 100 L720 140 L820 120 L860 70 L900 170 L940 120 L1040 120 L1080 80 L1120 150 L1160 120 L1200 120" />
+      </svg>
+    </div>
+  </div>
+  <header class="topbar">
+    <div class="brand">BloodCheck</div>
+    <nav class="nav">
+      <a href="index.html">Start</a>
+      <a href="analyse.html" class="active">Analyse</a>
+      <a href="info.html">Info</a>
+      <a href="quellen.html">Quellen</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="dsgvo.html">DSGVO</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <div class="panel__head">
+        <div>
+          <p class="eyebrow">Analyse</p>
+          <h2>Blutbild konfigurieren</h2>
+          <p class="muted">Geschlecht und Art des Blutbildes wählen, Werte eintragen, automatische Bewertung erhalten.</p>
+        </div>
+        <button class="btn btn--ghost" id="resetForm">Zurücksetzen</button>
+      </div>
+      <div class="grid grid--two">
+        <label class="field">
+          <span>Geschlecht</span>
+          <select id="gender">
+            <option value="male">Mann</option>
+            <option value="female">Frau</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Blutbild</span>
+          <select id="panelSelect"></select>
+          <small class="hint">Neue Blutbilder können in <code>script.js</code> im Objekt <code>bloodPanels</code> ergänzt werden.</small>
+        </label>
+      </div>
+      <div id="inputs" class="grid grid--three"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel__head">
+        <div>
+          <p class="eyebrow">Ergebnis</p>
+          <h2>Analyse &amp; Kreisdiagramm</h2>
+        </div>
+        <div class="actions">
+          <button class="btn btn--outline" id="analyzeBtn">Analyse aktualisieren</button>
+          <button class="btn btn--gold" id="downloadPdf">PDF herunterladen</button>
+        </div>
+      </div>
+      <div id="results" class="result-list"></div>
+      <canvas id="pieChart" width="400" height="400"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
